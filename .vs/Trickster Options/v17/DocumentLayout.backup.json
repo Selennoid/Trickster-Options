@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\BCG\\Desktop\\Trickster Options\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Helper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Helper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Gui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Gui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Language.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Language.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Language.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Language.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Gui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B36FF2CB-80BF-4850-BFD8-0CD56DF0422B}|Source\\Setup\\Setup.vcxproj|solutionrelative:Source\\Setup\\Gui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Helper.h",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Helper.h",
+              "RelativeDocumentMoniker": "Source\\Setup\\Helper.h",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Helper.h",
+              "RelativeToolTip": "Source\\Setup\\Helper.h",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-06T20:12:57.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Helper.cpp",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Helper.cpp",
+              "RelativeDocumentMoniker": "Source\\Setup\\Helper.cpp",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Helper.cpp",
+              "RelativeToolTip": "Source\\Setup\\Helper.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAP0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-06T20:05:15.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Gui.h",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Gui.h",
+              "RelativeDocumentMoniker": "Source\\Setup\\Gui.h",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Gui.h",
+              "RelativeToolTip": "Source\\Setup\\Gui.h",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-05T08:34:35.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Language.cpp",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Language.cpp",
+              "RelativeDocumentMoniker": "Source\\Setup\\Language.cpp",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Language.cpp",
+              "RelativeToolTip": "Source\\Setup\\Language.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-05T08:40:15.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Language.h",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Language.h",
+              "RelativeDocumentMoniker": "Source\\Setup\\Language.h",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Language.h",
+              "RelativeToolTip": "Source\\Setup\\Language.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-05T08:40:12.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gui.cpp",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Gui.cpp",
+              "RelativeDocumentMoniker": "Source\\Setup\\Gui.cpp",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Gui.cpp",
+              "RelativeToolTip": "Source\\Setup\\Gui.cpp",
+              "ViewState": "AgIAAI4BAAAAAAAAAAAwwLoBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-05T08:34:30.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Main.cpp",
+              "RelativeDocumentMoniker": "Source\\Setup\\Main.cpp",
+              "ToolTip": "C:\\Users\\BCG\\Desktop\\Trickster Options\\Source\\Setup\\Main.cpp",
+              "RelativeToolTip": "Source\\Setup\\Main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-05T08:29:06.463Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
