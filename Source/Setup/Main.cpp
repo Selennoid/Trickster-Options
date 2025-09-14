@@ -10,7 +10,7 @@
 int __stdcall wWinMain(HINSTANCE instance, HINSTANCE previousInstance, PWSTR arguments, int commandShow)
 {
     gui::AdminPermissions();
-    gui::CreateHWindow(L"Setup");
+    gui::CreateHWindow(L"Trickster Settings");
     gui::CreateDevice();
     gui::CreateImGui();
     while (gui::isRunning)

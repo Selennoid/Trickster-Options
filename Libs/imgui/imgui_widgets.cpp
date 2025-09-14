@@ -863,11 +863,11 @@ bool ImGui::CloseButton(ImGuiID id, const ImVec2& pos)
         return pressed;
 
     // Render
-    ImU32 bg_col = GetColorU32(held ? ImGuiCol_CloseButtonActive : ImGuiCol_CloseButtonHovered);
+    ImU32 bg_col = GetColorU32(held ? ImGuiCol_CloseButtonActive : hovered ? ImGuiCol_CloseButtonHovered : ImGuiCol_CloseButtonActive);
     if (hovered)
         window->DrawList->AddRectFilled(bb.Min, bb.Max, bg_col);
     RenderNavCursor(bb, id, ImGuiNavRenderCursorFlags_Compact);
-    ImU32 cross_col = GetColorU32(ImGuiCol_CloseButton);
+    ImU32 cross_col = GetColorU32(held ? ImGuiCol_Button : hovered ? ImGuiCol_Button : ImGuiCol_CloseButton);
     ImVec2 cross_center = bb.GetCenter() - ImVec2(0.5f, 0.5f);
     float cross_extent = g.FontSize * 0.5f * 0.7071f - 1.0f;
     window->DrawList->AddLine(cross_center + ImVec2(+cross_extent, +cross_extent), cross_center + ImVec2(-cross_extent, -cross_extent), cross_col, 3.0f);
@@ -922,11 +922,11 @@ bool ImGui::MinimizeButton(ImGuiID id, const ImVec2& pos)
     if (is_clipped)
         return pressed;
 
-    ImU32 bg_col = GetColorU32(held ? ImGuiCol_CloseButtonActive : ImGuiCol_CloseButtonHovered);
+    ImU32 bg_col = GetColorU32(held ? ImGuiCol_CloseButtonActive : hovered ? ImGuiCol_CloseButtonHovered : ImGuiCol_CloseButtonActive);
     if (hovered)
         window->DrawList->AddRectFilled(bb.Min, bb.Max, bg_col);
     RenderNavCursor(bb, id, ImGuiNavRenderCursorFlags_Compact);
-    ImU32 minus_col = GetColorU32(ImGuiCol_CloseButton);
+    ImU32 minus_col = GetColorU32(held ? ImGuiCol_Button : hovered ? ImGuiCol_Button : ImGuiCol_CloseButton);
     ImVec2 center = bb.GetCenter();
     float line_length = g.FontSize * 0.6f;
     float line_thickness = 3.0f;

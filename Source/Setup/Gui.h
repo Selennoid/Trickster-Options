@@ -20,7 +20,7 @@ namespace gui
 	extern ImFont* Big;
 	extern Helper* helper;
 	constexpr int WIDTH = 300;
-	constexpr int HEIGHT = 650;
+	constexpr int HEIGHT = 560;
 	extern bool isRunning;
 	extern HWND window;
 	extern WNDCLASSEX windowClass;
