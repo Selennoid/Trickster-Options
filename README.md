@@ -1,4 +1,4 @@
-<img width="298" height="647" alt="1757194971690- RaGEZONE" src="https://github.com/user-attachments/assets/d802cff1-0642-412a-92eb-332084c43224" />
+<img width="298" height="647" alt="1757194971690- RaGEZONE" src="https://i.imgur.com/NncVvqr.png" />
 
 # Trickster Options
 
