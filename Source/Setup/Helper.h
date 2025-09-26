@@ -53,5 +53,6 @@ class Helper
         void UpdateUIFiles();
         void changeChat();
         void changeChatDefault();
+        bool IsWidthSupported(int iWidth);
         LPCSTR subKey;
 };

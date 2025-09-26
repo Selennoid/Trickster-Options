@@ -20,14 +20,17 @@ void Helper::PopulateSupportedResolutions()
     devMode.dmSize = sizeof(devMode);
     while (EnumDisplaySettings(NULL, modeNum, &devMode)) 
     {
-        std::pair<std::string, std::string> tempPair = std::make_pair(std::to_string(devMode.dmPelsWidth), std::to_string(devMode.dmPelsHeight));
-        auto it = std::find(gui::supportedResolutions.begin(), gui::supportedResolutions.end(), tempPair);
-        if (it != gui::supportedResolutions.end())
+        if (IsWidthSupported(devMode.dmPelsWidth))
         {
-            modeNum++;
-            continue;
+            std::pair<std::string, std::string> tempPair = std::make_pair(std::to_string(devMode.dmPelsWidth), std::to_string(devMode.dmPelsHeight));
+            auto it = std::find(gui::supportedResolutions.begin(), gui::supportedResolutions.end(), tempPair);
+            if (it != gui::supportedResolutions.end())
+            {
+                modeNum++;
+                continue;
+            }
+            gui::supportedResolutions.emplace_back(tempPair);
         }
-        gui::supportedResolutions.emplace_back(tempPair);
         modeNum++;
     }
 }
@@ -439,4 +442,13 @@ void Helper::changeChatDefault()
     out << "iModeButtonDimY\t= 18\n\n";
     out << "iDummyModeButtonDimX\t= 64\n";
     out << "iDummyModeButtonDimY\t= 18\n\n";
+}
+
+bool Helper::IsWidthSupported(int iWidth)
+{
+    std::vector<int> supportedWidthList = { 800, 1024, 1280, 1366, 1440, 1600, 1680, 1920, 2180 };
+    auto it = std::find(supportedWidthList.begin(), supportedWidthList.end(), iWidth);
+    if (it != supportedWidthList.end())
+        return true;
+    return false;
 }
