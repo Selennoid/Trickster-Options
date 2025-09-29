@@ -199,13 +199,16 @@ bool Helper::CopyDirectorySafe(const std::string& srcDir, const std::string& dst
 void Helper::ApplyResolutionFiles()
 {
     int width = std::stoi(gui::savedConfigs.currentResolution.first);
-    if (width > 800)
+    int height = std::stoi(gui::savedConfigs.currentResolution.second);
+    if (width > 800 && height > 600)
     {
         CopyFileSafe("data\\UI_nori\\intro_img\\intro_base1024.nri", "data\\UI_nori\\intro_img\\intro_base" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\intro_img\\intro_load1024.nri", "data\\UI_nori\\intro_img\\intro_load" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyDirectorySafe("data\\UI_nori\\LoadingImg_1024\\", "data\\UI_nori\\LoadingImg_" + gui::savedConfigs.currentResolution.first + "\\");
         CopyFileSafe("data\\UI_nori\\CharSelectUI_1024.nri", "data\\UI_nori\\CharSelectUI_" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\CharSelectUI_1024.ucf", "data\\UI_nori\\CharSelectUI_" + gui::savedConfigs.currentResolution.first + ".ucf");
+        CopyFileSafe("data\\UI_nori\\CharCreateUI_1024.nri", "data\\UI_nori\\CharCreateUI_" + gui::savedConfigs.currentResolution.first + ".nri");
+        CopyFileSafe("data\\UI_nori\\CharCreateUI_1024.ucf", "data\\UI_nori\\CharCreateUI_" + gui::savedConfigs.currentResolution.first + ".ucf");
         CopyFileSafe("data\\UI_nori\\FortuneBg_1024.nri", "data\\UI_nori\\FortuneBg_" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\InstructionUI_1024.nri", "data\\UI_nori\\InstructionUI_" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\InstructionUI_1024.ucf", "data\\UI_nori\\InstructionUI_" + gui::savedConfigs.currentResolution.first + ".ucf");
@@ -219,6 +222,8 @@ void Helper::ApplyResolutionFiles()
         CopyDirectorySafe("data\\UI_nori\\LoadingImg_800\\", "data\\UI_nori\\LoadingImg_" + gui::savedConfigs.currentResolution.first + "\\");
         CopyFileSafe("data\\UI_nori\\CharSelectUI_800.nri", "data\\UI_nori\\CharSelectUI_" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\CharSelectUI_800.ucf", "data\\UI_nori\\CharSelectUI_" + gui::savedConfigs.currentResolution.first + ".ucf");
+        CopyFileSafe("data\\UI_nori\\CharCreateUI_800.nri", "data\\UI_nori\\CharCreateUI_" + gui::savedConfigs.currentResolution.first + ".nri");
+        CopyFileSafe("data\\UI_nori\\CharCreateUI_800.ucf", "data\\UI_nori\\CharCreateUI_" + gui::savedConfigs.currentResolution.first + ".ucf");
         CopyFileSafe("data\\UI_nori\\FortuneBg_800.nri", "data\\UI_nori\\FortuneBg_" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\InstructionUI_800.nri", "data\\UI_nori\\InstructionUI_" + gui::savedConfigs.currentResolution.first + ".nri");
         CopyFileSafe("data\\UI_nori\\InstructionUI_800.ucf", "data\\UI_nori\\InstructionUI_" + gui::savedConfigs.currentResolution.first + ".ucf");
@@ -229,9 +234,11 @@ void Helper::ApplyResolutionFiles()
 
 void Helper::UpdateUIFiles() 
 {
-    int CharSelectXMinus = std::stoi(gui::savedConfigs.currentResolution.first) - 582;
+    int width = std::stoi(gui::savedConfigs.currentResolution.first);
+    int height = std::stoi(gui::savedConfigs.currentResolution.second);
+    int CharSelectXMinus = width - 582;
     int CharSelectX = CharSelectXMinus / 2;
-    int CharSelectYMinus = std::stoi(gui::savedConfigs.currentResolution.second) - 458;
+    int CharSelectYMinus = height - 458;
     int CharSelectY = CharSelectYMinus / 2;
     int TimeCapsuleX = CharSelectX;
     int TimeCapsuleY = CharSelectY + 346;
@@ -246,12 +253,8 @@ void Helper::UpdateUIFiles()
     {
         std::ofstream out(charSelectPath, std::ios::trunc);
 
-        out << "iBase_CoordX_800 = 109\n";
-        out << "iBase_CoordY_800 = 80\n";
-        out << "iBase_CoordX_1024 = 221\n";
-        out << "iBase_CoordY_1024 = 155\n";
-        out << "iBase_CoordX_" << std::stoi(gui::savedConfigs.currentResolution.first) << " = " << CharSelectX << "\n";
-        out << "iBase_CoordY_" << std::stoi(gui::savedConfigs.currentResolution.first) << " = " << CharSelectY << "\n\n";
+        out << "iBase_CoordX_" << width << " = " << CharSelectX << "\n";
+        out << "iBase_CoordY_" << width << " = " << CharSelectY << "\n\n";
         out << "iDeleteBtn_CoordX = 24\n";
         out << "iDeleteBtn_CoordY = 314\n\n";
         out << "iCreateBtn_CoordX = 86\n";
@@ -322,10 +325,6 @@ void Helper::UpdateUIFiles()
     }
     {
         std::ofstream out(timeCapsulePath, std::ios::trunc);
-        out << "iMenu_CoordX_800 = 109\n";
-        out << "iMenu_CoordY_800 = 426\n";
-        out << "iMenu_CoordX_1024 = 221\n";
-        out << "iMenu_CoordY_1024 = 501\n";
         out << "iMenu_CoordX_" << std::stoi(gui::savedConfigs.currentResolution.first) << " = " << TimeCapsuleX << "\n";
         out << "iMenu_CoordY_" << std::stoi(gui::savedConfigs.currentResolution.first) << " = " << TimeCapsuleY << "\n\n";
         out << "iMenuBtn_CoordX_0 = 35\n";
